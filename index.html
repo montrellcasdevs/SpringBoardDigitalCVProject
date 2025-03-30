@@ -22,7 +22,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur atque consectetur consequatur dignissimos,
         earum ex incidunt laboriosam magni molestiae mollitia omnis porro provident qui, rerum, sapiente sint veniam veritatis!</p>
     </section>
-        <h3>Education</h3>
+        <h2>Education</h2>
         <ul>
           <li>Bachelor of Computer and Information Science</li>
           <li><a href="https://www.springboard.com/">Springboard</a>-Software Engineering Career Track (2025)</li>
@@ -30,7 +30,32 @@
         </ul>
     </section>
     <section>
-      <table width="400" cellpadding="10" cellspacing="5" border="2" bgcolor="#efefef">
+      <h2>Technologies</h2>
+      <h3>Web Development</h3>
+      <ul>
+        <li>CSS</li>
+        <li>HTML5</li>
+        <li>FullStack</li>
+        <li>Power Platform</li>
+
+      </ul>
+      <h3>Continuous Integration/Delivery</h3>
+      <ul>
+        <li>Jenkins</li>
+        <li>Sonarqube</li>
+        <li>Kubernetes</li>
+        <li>Prometheus</li>
+      </ul>
+      <h3>Testing</h3>
+      <ul>
+        <li>Unit Testing</li>
+        <li>JUnit Testing</li>
+        <li>JUnit</li>
+      </ul>
+    </section>
+
+    <section>
+      <table width="400" cellpadding="10" cellspacing="5" border="1" bgcolor="#efefef">
         <thead>
         <tr>
           <th>Web Languages</th>
@@ -66,6 +91,42 @@
         </tr>
         </tbody>
     </table>
+    </section>
+    <section>
+      <form>
+        <fieldset>
+          <legend><h3>Contact Me</h3></legend>
+          <p><label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Your first name.."></p>
+
+          <p><label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Your last name.."></p>
+
+          <p><label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email.."></p>
+
+          <p><label for="organization">Organization</label>
+          <input type="text" id="organization" name="organization" placeholder="Your Organization.."></p>
+
+          <p><label for="message">Message</label></p>
+          <textarea id="message" name="message" placeholder="Your message.." rows="4" cols="25"></textarea>
+
+          <p>What time do you prefer
+          <p><input type="checkbox" name="service" value="morning">Morning</input>
+          <input type="checkbox" name="service" value="noon">Noon</input>
+          <input type="checkbox" name="service" value="evening">Evening</input>
+        </p>
+          <p>Reason for Contact</p>
+          <select name="contact">
+            <option value="choose">--Please select a choice--</option>
+          <option value ="job">Job Offer</option>
+          <option value="contract">Contract</option>
+          <option value="consulting">Consulting</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+        <p><button type="submit">Submit</button></p>
+      </form>
     </section>
   </main> <!-----------------------------MAIN------------------------------------------------------------------------------>
   </body><!-----------------------------BODY------------------------------------------------------------------------------>
