@@ -1,0 +1,32 @@
+Conceptual Exercise - CSS Fundamentals
+Question 1 ❓
+Explain how CSS differs from HTML in the context of web development.
+HTML is the skeleton, but you don't know how it looks as a person. Thus, CSS is like the flesh and clothes being added to the skeleton. You know how it truly looks with the CSS.
+Question 2 ❓
+List the methods of including CSS in an HTML document and briefly describe each.
+Inline CSS has the most weight but should be used sparingly. Internal Styles are written between style tags and have priority behind Inline CSS. The External Styles sheet is most preferred because developers can use it in code generalization.
+Question 3 ❓
+Describe the anatomy of a CSS rule.
+CSS uses Selectors to specify which tag to style. Each declaration has a key-value combination enclosed in brackets.
+Question 4 ❓
+When might you want to use RGBA instead of RGB?
+I generally use RGB until I decide to style the background image. In this case, the last digit of the Alpha transparency is helpful for controlling the degree of transparency.
+Question 5 ❓
+How do Hex color values differ from RGB?
+Hex is similar to RGB except for the fact that Hex has at least 16 regular numbers—not just 0-9 but A, B, C, D, E, and F.
+Question 6 ❓
+When might a developer prefer to use HSL over other color formats?
+Give the developer more control. It gives the developer more power to be creative with the color schemes.
+Question 7 ❓
+What are the primary text properties used in CSS to modify the appearance and layout of text?
+There are many. I have used text-transform, font-size, text-align, font-weight and so forth.
+Question 8 ❓
+In what scenarios might it be beneficial to use vh or vw as a unit for font size?
+It is beneficial when you want your app's properties to be more responsive. It can adjust the base of the viewport height and width.
+Question 9 ❓
+Explain the difference between em and rem units.
+Rem's size stays consistent with the root, while the em measures itself based on its parent.
+Question 10 ❓
+If multiple font families are listed in the font-family property, how does the browser decide which one to display?
+Some fonts are unavailable with every browser, so having many types within the selector gives you the power to choose available fonts rather than the default.
+
