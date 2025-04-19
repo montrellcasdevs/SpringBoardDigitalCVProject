@@ -4,10 +4,149 @@
     <meta charset="UTF-8">
     <title>A Digital CV</title>
   </head>
+  <style>
+    header,section,footer,aside,main{
+      display:block;
+    }
+    body{
+      background-color: lightgray;
+      font-family: 'Roboto',sans-serif;
+      line-height:1.6em;
+      border: 2px solid black;
+      background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url("https://media.istockphoto.com/id/1211188566/photo/african-american-software-developer-working-in-office.jpg?s=1024x1024&w=is&k=20&c=rGRQKbVOw_ag7q_cS9iS6eVjh02jCxuYQcNDhoC8690=");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-blend-mode: overlay;
+      text-align: center;
+      text-decoration: none;
+      background-color: rgba(255,255,255, 0.9);
+      margin: 2em 0;
+    }
+    h1, h2, h3{
+      font-width: 700;
+    }
+    p, li{
+      font-weight: 400;
+      font-size: 1.1em;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em 0;
+      background-color: lightgray;
+      text-transform: uppercase;
+    }
+    header h1{
+      margin: 0.5em 0;
+    }
+    ul{
+      list-style-type: none;
+      margin: 0 0 1em 0;
+      padding:0;
+    }
+    section{
+
+    }
+    table{
+      width: 50%;
+      margin: 0 auto; /* This centers the table horizontally */
+      border: 1px solid black; /* Keeps the existing border styling */
+      border-collapse: collapse;
+    }
+    table tbody tr:nth-child(odd) {
+      background-color: #f9f9f9; /* Light gray for odd rows */
+    }
+    table tbody tr:nth-child(even) {
+      background-color: #ffffff; /* Default for even rows */
+    }
+
+
+    th, td{
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th{
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 90%;
+      border-bottom: 2px solid #111111;
+      border-top: 1px solid #999;
+      text-align: left;
+      font-width: bold;
+    }
+    tr.even{
+      background-color: #efefef;
+    }
+    tr:hover{
+      background-color: #c3e6e5;
+    }
+    a:hover{
+      color: #007BFF;
+      text-decoration:underline;
+    }
+    li{
+      transition:transform 0.2s ease-in-out;
+    }
+    li:hover{
+      transform: scale(1.05);
+    }
+    form{
+      max-width: 500px;
+      margin: 0 auto; /* Center the form horizontally */
+      padding: 20px;
+      background-color: #f9f9f9; /* Light background for contrast */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-family: 'Arial', sans-serif;
+
+    }
+    label{
+      display: block; /* Stack labels and inputs */
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #333;
+
+    }
+    input, textarea, button {
+      width: 100%; /* Make inputs full width */
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #007BFF; /* Highlight the input border on focus */
+      outline: none; /* Remove default browser outline */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add custom focus effect */
+    }
+    button {
+      background-color: #007BFF; /* Primary button color */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3; /* Darker shade on hover */
+    }
+
+
+
+
+
+  </style>
   <body><!-----------------------------BODY------------------------------------------------------------------------------>
-    <!-- TODO: Add your code. -->
+
     <header>
-      <img src="https://media.istockphoto.com/id/1211188566/photo/african-american-software-developer-working-in-office.jpg?s=1024x1024&w=is&k=20&c=rGRQKbVOw_ag7q_cS9iS6eVjh02jCxuYQcNDhoC8690=" width="100"  alt="">
+      <img src="https://media.istockphoto.com/id/1211188566/photo/african-american-software-developer-working-in-office.jpg?s=1024x1024&w=is&k=20&c=rGRQKbVOw_ag7q_cS9iS6eVjh02jCxuYQcNDhoC8690=" width="100"  alt="Montrell Story's Profile picture">
       <h1>Montrell Story</h1>
       <ul>
         <li>Email: montrell.story@gmail.com</li>
@@ -17,19 +156,17 @@
     </header>
   <main>  <!-----------------------------MAIN------------------------------------------------------------------------------>
 
-    <section>
+
       <h2>Summary</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur atque consectetur consequatur dignissimos,
         earum ex incidunt laboriosam magni molestiae mollitia omnis porro provident qui, rerum, sapiente sint veniam veritatis!</p>
-    </section>
         <h2>Education</h2>
         <ul>
           <li>Bachelor of Computer and Information Science</li>
           <li><a href="https://www.springboard.com/">Springboard</a>-Software Engineering Career Track (2025)</li>
           <li>Bachelor of Computer and Information Science</li>
         </ul>
-    </section>
-    <section>
+
       <h2>Technologies</h2>
       <h3>Web Development</h3>
       <ul>
@@ -52,10 +189,8 @@
         <li>JUnit Testing</li>
         <li>JUnit</li>
       </ul>
-    </section>
 
-    <section>
-      <table width="400" cellpadding="10" cellspacing="5" border="1" bgcolor="#efefef">
+      <table>
         <thead>
         <tr>
           <th>Web Languages</th>
@@ -71,7 +206,7 @@
         <td>Spring</td>
         <td><a href="https://github.com/montrellcasdevs/SpringBoardBuildingDigitalCV">Github</a></td>
       </tr>
-        <tr>
+        <tr class="even">
           <td>JavaScript</td>
           <td>Node.js</td>
           <td>Github</td>
@@ -83,7 +218,7 @@
          <td>Git</td>
          <td><a href="https://montrell-story.github.io/">ProjectA</a></td>
        </tr>
-        <tr>
+        <tr class="even">
           <td>Power Apps</td>
           <td>PostgresSQL</td>
           <td>GitBash</td>
@@ -91,43 +226,23 @@
         </tr>
         </tbody>
     </table>
-    </section>
-    <section>
-      <form>
-        <fieldset>
-          <legend><h3>Contact Me</h3></legend>
-          <p><label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" placeholder="Your first name.."></p>
 
-          <p><label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName" placeholder="Your last name.."></p>
 
-          <p><label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email.."></p>
+    <form action="https://example.com/submit-form" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Full Name" required>
 
-          <p><label for="organization">Organization</label>
-          <input type="text" id="organization" name="organization" placeholder="Your Organization.."></p>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email Address" required>
 
-          <p><label for="message">Message</label></p>
-          <textarea id="message" name="message" placeholder="Your message.." rows="4" cols="25"></textarea>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
 
-          <p>What time do you prefer
-          <p><input type="checkbox" name="service" value="morning">Morning</input>
-          <input type="checkbox" name="service" value="noon">Noon</input>
-          <input type="checkbox" name="service" value="evening">Evening</input>
-        </p>
-          <p>Reason for Contact</p>
-          <select name="contact">
-            <option value="choose">--Please select a choice--</option>
-          <option value ="job">Job Offer</option>
-          <option value="contract">Contract</option>
-          <option value="consulting">Consulting</option>
-            <option value="other">Other</option>
-          </select>
-        </fieldset>
-        <p><button type="submit">Submit</button></p>
-      </form>
-    </section>
+      <button type="submit">Send</button>
+    </form>
+
+
   </main> <!-----------------------------MAIN------------------------------------------------------------------------------>
+
   </body><!-----------------------------BODY------------------------------------------------------------------------------>
 </html>
